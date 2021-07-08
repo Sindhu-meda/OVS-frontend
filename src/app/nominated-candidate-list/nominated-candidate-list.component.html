@@ -1,0 +1,32 @@
+<!-- <p>nominated-candidate-list works!</p> -->
+<table class="table table-stiped">
+    <thead>
+        <tr>
+            <!-- <th>id</th> -->
+            <th>candidateId</th>
+            <th>nominationFormNo</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let nominatedCandidate of NominatedCandidate">
+        
+            <td>{{nominatedCandidate.canidateId}}</td>
+            <td>{{nominatedCandidate.nominationFormNo}}</td>
+            
+            <td>
+                {{nominatedCandidate.candidateId}}
+                <button type="button" class="btn btn-outline-info btn-sm"  routerLink = "/updateNominatedCandidate/{{nominatedCandidate.id}}"> UpdateNominatedCandidate</button>
+                <button type="button" class="btn btn-outline-info btn-sm"  routerLink = "/getNominatedCandidateById/{{nominatedCandidate.id}}">GetNominatedCandidatebyid</button>
+                <button (click) = "deleteNominatedCandidate(nominatedCandidate.id)"  class="btn btn-danger" type="submit">Delete</button>
+                
+                
+
+            </td>
+            </tr>
+        </tbody>
+</table>
+<footer class="footer">
+    <button   type="button" class="btn btn-info " routerLink="/electionofficer-page">Back</button>
+    <button   type="button" class="btn btn-info " routerLink="/main-page">Return MainPage</button> 
+</footer>

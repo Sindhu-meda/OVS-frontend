@@ -1,0 +1,13 @@
+<div style="text-align: center">
+    <div class="cards" *ngIf="nominatedCandidate">
+        <h3>View Details!!</h3>
+        <h3>candidateId: {{nominatedCandidate.id}}</h3>
+        <h3>nominationFormNo: {{nominatedCandidate.nominationFormNo}}</h3>
+    </div>
+    <footer class="footer">
+        <button   type="button" class="btn btn-info " routerLink="/getNominatedCandidateList">Back</button>
+        
+        <button   type="button" class="btn btn-info " routerLink="/main-page">Return HomePage</button> 
+    </footer>
+    
+    </div>

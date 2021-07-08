@@ -1,0 +1,313 @@
+<!-- <p>registered-society-voters works!</p> -->
+<form
+  #Registeredsocietyvoters="ngForm"
+  (ngSubmit)="onSubmit(saveRegisteredSocietyVoters)"
+
+  
+
+>
+  <div class="container" style="background-color: beige">
+    <div class="col-md-4">
+      <h2 style="text-align: center">
+        <form>     
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Candidate ID</label
+            >
+            <input
+              class="form-control"
+              type="number"
+              id="candidateId"
+              [(ngModel)]="nominatedCandidate.candidateId"
+              name="candidateId"
+            />
+          </div>
+
+          <!-- <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+              
+                color: black;
+              "
+              >Candidate Form No</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="nominationFormNo"
+              [(ngModel)]="nominatedCandidate.nominationFormNo"
+              name="nominationFormNo"
+            />
+          </div> -->
+<br>
+<h3 style="text-align: left; color: brown; font-weight: 600;">Enter your society details</h3>
+          <!-- cooperativesocietyform -->
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+              
+              "
+              >Society Name</label
+            >
+            <input
+              class="form-control"
+              type="Text"
+              id="societyName"
+              [(ngModel)]="cooperativesociety.societyName"
+              name="societyName"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Head of Society</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="headOfSociety"
+              [(ngModel)]="cooperativesociety.headOfSociety"
+              name="headOfSociety"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Village</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="village"
+              [(ngModel)]="cooperativesociety.village"
+              name="village"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >District</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="district"
+              [(ngModel)]="cooperativesociety.district"
+              name="district"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Pincode</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="pincode"
+              [(ngModel)]="cooperativesociety.pincode"
+              name="pincode"
+            />
+          </div>
+          <br>
+          <h3 style="text-align: left; color: brown; font-weight: 600;">Enter your details</h3>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Voter ID Card No</label
+            >
+            <input
+              class="form-control"
+              type="Text"
+              id="voterIdCardNo"
+              [(ngModel)]="registeredsocietyvoters.voterIdCardNo"
+              name="voterIdCardNo"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >First Name</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="firstName"
+              [(ngModel)]="registeredsocietyvoters.firstName"
+              name="firstName"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+               
+              "
+              >Last Name</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="lastName"
+              [(ngModel)]="registeredsocietyvoters.lastName"
+              name="lastName"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Gender</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="gender"
+              [(ngModel)]="registeredsocietyvoters.gender"
+              name="gender"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Mobile No</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="mobileNo"
+              [(ngModel)]="registeredsocietyvoters.mobileNo"
+              name="mobileNo"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Email ID</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="emailId"
+              [(ngModel)]="registeredsocietyvoters.emailId"
+              name="emailId"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+               
+              "
+              >Address</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="address"
+              [(ngModel)]="registeredsocietyvoters.address"
+              name="address"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >District</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="district"
+              [(ngModel)]="registeredsocietyvoters.district"
+              name="district"
+            />
+          </div>
+          <div class="form-group">
+            <label
+              style="
+                font-style: italic;
+                font-size: small;
+                color: black;
+                
+              "
+              >Pincode</label
+            >
+            <input
+              class="form-control"
+              type="text"
+              id="pincode"
+              [(ngModel)]="registeredsocietyvoters.pincode"
+              name="pincode"
+            />
+          </div>
+        </form>
+      </h2>
+      <button class="btn btn-success" type="submit">Vote</button> |
+      <button class="btn btn-primary" type="reset">Clear</button>
+    </div>
+  </div>
+</form>

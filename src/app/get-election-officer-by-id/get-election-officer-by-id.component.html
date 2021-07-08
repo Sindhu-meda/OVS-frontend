@@ -1,0 +1,21 @@
+<!-- <p>get-election-officer-by-id works!</p> -->
+<div style="text-align: center">
+<div class="cards" *ngIf="electionOfficers">
+
+    <h3>View Details!!</h3>
+    <h3>firstName: {{electionOfficers.firstName}}</h3>
+    <h3>lastName: {{electionOfficers.lastName}}</h3>
+    <h3>emailId: {{electionOfficers.emailId}}</h3>
+    <h3>address1: {{electionOfficers.address1}}</h3>
+    <h3>mobileno: {{electionOfficers.mobileno}}</h3>
+    <h3>district: {{electionOfficers.district}}</h3>
+    <h3>pincode: {{electionOfficers.pincode}}</h3>
+    <h3>gender: {{electionOfficers.gender}}</h3>
+</div>
+<footer class="footer">
+    <button   type="button" class="btn btn-info " routerLink="/getElectionOfficerList">Back</button>
+    
+    <button   type="button" class="btn btn-info " routerLink="/main-page">Return HomePage</button> 
+</footer>
+
+</div>

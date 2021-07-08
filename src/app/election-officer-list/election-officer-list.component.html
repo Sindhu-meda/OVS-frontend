@@ -1,0 +1,46 @@
+<!-- <p>election-officer-list works!</p> -->
+<table class="table table-stiped">
+    <thead>
+        <tr>
+            <!-- <th>id</th> -->
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Pincode</th>
+            <th>District</th>
+            <th>gender</th>
+            <th>Actions</th>
+            
+
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let electionOfficer of ElectionOfficers">
+            <!-- <td>{{electionOfficer.id}}</td> -->
+            <td>{{electionOfficer.firstName}}</td>
+            <td>{{electionOfficer.lastName}}</td>
+            <td>{{electionOfficer.address1}}</td>
+            <td>{{electionOfficer.emailId}}</td>
+            <td>{{electionOfficer.mobileno}}</td>
+            <td>{{electionOfficer.pincode}}</td>
+            <td>{{electionOfficer.district}}</td>
+            <td>{{electionOfficer.gender}}</td>
+            <td>
+                {{electionOfficer.id}}
+                <button type="button" class="btn btn-outline-info btn-sm"  routerLink = "/updateElectionOfficer/{{electionOfficer.id}}"> UpdateElectionOfficer</button>
+                <button type="button" class="btn btn-outline-info btn-sm"  routerLink = "/getElectionOfficerById/{{electionOfficer.id}}"> GetElectionOfficerById</button>
+                <button (click) = "deleteElectionOfficers(electionOfficer.id)"  class="btn btn-danger" type="submit">Delete</button>
+                
+                
+
+            </td>
+            </tr>
+        </tbody>
+</table>
+<footer class="footer">
+    <button   type="button" class="btn btn-info " routerLink="/electionofficer-page">Back</button>
+    <button   type="button" class="btn btn-info " routerLink="/main-page">Return MainPage</button> 
+</footer>

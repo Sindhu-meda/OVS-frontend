@@ -1,0 +1,15 @@
+<!-- <p>update-nominated-candidate works!</p> -->
+<h2>Update NominatedCandidate</h2>
+<form #updateNominatedCandidate = "ngForm" (ngSubmit)="onSubmit()">
+
+  <div class="form-group">
+    <label>candidateId</label>
+    <input type="number" class="form-control" id="candidateId" [(ngModel)]="nominatedCandidate.candidateId" name="candidateId">
+  </div>
+ 
+  <div class="form-group">
+    <label>nominationFormNo</label>
+    <input type="text" class="form-control" id="nominationFormNo" [(ngModel)]="nominatedCandidate.nominationFormNo" name="nominationFormNo">
+  </div>
+ <button class="btn btn-success" type="submit">Submit</button>
+</form>

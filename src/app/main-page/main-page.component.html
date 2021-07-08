@@ -1,0 +1,52 @@
+<h1
+  style="
+    text-align: center;
+    background-color: rgba(247, 118, 12, 0.686);
+    font-family: sans-serif;
+    font-weight: 900;
+  "
+>
+  Online Voting System
+</h1>
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="/main-page" routerLinkActive="active" class="nav-link"
+        >MainPage</a
+      >
+    </li>
+  </ul>
+
+  <ul class="navbar-nav">
+    <li class="nav-item">
+     
+      <a
+        routerLink="/electionofficer-page"
+        routerLinkActive="active"
+        class="nav-link"
+        ><span class="glyphicon glyphicon-user"></span>ElectionOfficer</a
+      >
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/voter-page" routerLinkActive="active" class="nav-link"
+        ><span class="glyphicon glyphicon-user"></span>Voter</a
+      >
+    </li>
+
+    <li class="nav-item">
+      <a routerLink="/admin-page" routerLinkActive="active" class="nav-link"
+        ><span class="glyphicon glyphicon-user"></span>Admin</a
+      >
+    </li>
+  </ul>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <span>All rights reserved 2021</span>
+  </div>
+</footer>
